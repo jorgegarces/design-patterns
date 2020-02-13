@@ -12,4 +12,13 @@ public class PizzaShopShould {
 
         Assert.assertEquals("Cheese Pizza", cheesePizza.getName());
     }
+
+    @Test
+    public void prepare_a_pepperoni_pizza_if_pepperoni_is_passed_as_an_argument() {
+
+        PizzaShop pizzaShop = new PizzaShop();
+        Pizza pepperoniPizza = pizzaShop.orderPizza("pepperoni");
+
+        Assert.assertEquals("Pepperoni Pizza", pepperoniPizza.getName());
+    }
 }

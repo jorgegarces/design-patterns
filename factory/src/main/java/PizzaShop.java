@@ -1,20 +1,18 @@
-import pizzas.CheesePizza;
-import pizzas.HamPizza;
-import pizzas.PepperoniPizza;
-import pizzas.Pizza;
+import pizzas.*;
 
 public class PizzaShop {
 
-    Pizza pizza;
+    PizzaFactory pizzaFactory;
 
-    public Pizza orderPizza(String order) {
-        if (order.equals("cheese")) this.pizza = new CheesePizza();
-        if (order.equals("pepperoni")) this.pizza = new PepperoniPizza();
-        if (order.equals("ham")) this.pizza = new HamPizza();
-        return doOrder();
+    public PizzaShop() {
+        this.pizzaFactory = new PizzaFactory();
     }
 
-    private Pizza doOrder() {
+    public Pizza orderPizza(String order) {
+
+        Pizza pizza;
+        pizza = pizzaFactory.createPizza(order);
+
         pizza.prepare();
         pizza.bake();
         pizza.box();
