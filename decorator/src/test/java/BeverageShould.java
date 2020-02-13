@@ -2,11 +2,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BeverageShould {
+
     @Test
-    public void cost_0_for_a_dark_roast() {
+    public void cost_1_for_a_ristretto() {
 
-        Beverage darkRoast= new DarkRoast();
+        Beverage ristretto = new Ristretto();
 
-        Assert.assertTrue(darkRoast.checkPrice(0.0));
+        Assert.assertTrue(ristretto .checkPrice(1.0));
     }
 }
