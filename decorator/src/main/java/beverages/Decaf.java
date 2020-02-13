@@ -1,17 +1,17 @@
+package beverages;
+
 public class Decaf extends Beverage {
 
     public Decaf() {
-        String description = "Decaf";
+        description = "Decaf";
     }
 
-
     @Override
-    double cost() {
+    public double cost() {
         return 1.5;
     }
 
-    @Override
-    boolean checkPrice(double value) {
+    public boolean checkPrice(double value) {
         return this.cost() == value;
     }
 }
