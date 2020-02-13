@@ -10,7 +10,7 @@ public class PizzaShopShould {
         PizzaShop pizzaShop = new PizzaShop();
         Pizza cheesePizza = pizzaShop.orderPizza("cheese");
 
-        Assert.assertEquals("Cheese Pizza", cheesePizza.getName());
+        Assert.assertEquals("New York Cheese Pizza", cheesePizza.getName());
     }
 
     @Test
