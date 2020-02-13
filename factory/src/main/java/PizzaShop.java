@@ -15,8 +15,8 @@ public class PizzaShop {
 
         pizza.prepare();
         pizza.bake();
-        pizza.box();
         pizza.cut();
+        pizza.box();
 
         return pizza;
     }
