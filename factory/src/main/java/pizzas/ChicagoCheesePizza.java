@@ -5,9 +5,9 @@ public class ChicagoCheesePizza extends Pizza {
     public ChicagoCheesePizza() {
         name = "Chicago Cheese Pizza";
         dough = "Thicc";
-        sauce = "Pesto para el resto";
+        sauce = "Pesto sauce";
         price = 10;
         toppings.add("Parmiggiano Cheese");
-        toppings.add("Chicago jalapenios");
+        toppings.add("Chicago Jalapenios");
     }
 }

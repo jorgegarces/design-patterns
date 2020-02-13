@@ -10,4 +10,9 @@ public class NewYorkCheesePizza extends Pizza {
         toppings.add("Grated Reggiano Cheese");
         toppings.add("Statue of Liberty Onions");
     }
+
+    @Override
+    public void cut() {
+        System.out.println("Cutting into rectangular pieces");
+    }
 }
