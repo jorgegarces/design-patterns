@@ -6,7 +6,6 @@ public abstract class GuyDecorator implements MillenialGuy {
         this.guy = guy;
     }
 
-
     @Override
     public String decorate() {
         return guy.decorate();
