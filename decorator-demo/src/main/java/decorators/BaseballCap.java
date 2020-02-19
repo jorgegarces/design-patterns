@@ -1,6 +1,10 @@
+package decorators;
+
+import millenial.MillennialGuy;
+
 public class BaseballCap extends GuyDecorator {
 
-    public BaseballCap(MillenialGuy guy) {
+    public BaseballCap(MillennialGuy guy) {
         super(guy);
     }
 

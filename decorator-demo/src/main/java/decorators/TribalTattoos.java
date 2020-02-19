@@ -1,6 +1,11 @@
+package decorators;
+
+import decorators.GuyDecorator;
+import millenial.MillennialGuy;
+
 public class TribalTattoos extends GuyDecorator {
 
-    public TribalTattoos(MillenialGuy guy) {
+    public TribalTattoos(MillennialGuy guy) {
         super(guy);
     }
 
